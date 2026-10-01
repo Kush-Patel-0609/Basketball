@@ -1,0 +1,15 @@
+{
+  "rules": {
+    "matches": {
+      "$matchId": {
+        ".read": true,
+        ".write": true,
+        ".validate": "newData.hasChildren(['no','home','guest','clock','log'])"
+      }
+    },
+    "$other": {
+      ".read": false,
+      ".write": false
+    }
+  }
+}
